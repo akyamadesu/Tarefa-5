@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+
+<body>
+    <h3>Calculadora:</h3>
+    <label for="valor1">Valor 1:</label>
+    <input type="text" id="valor1"><br>
+
+    <label for="valor2">Valor 2:</label>
+    <input type="text" id="valor2"><br>
+
+    <label for="operacao">Operação:</label>
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <h3>Resultado do custo de carro:</h3>
+    <div id="resultado"></div>
+
+    <!--interface da calculadora de custo de carro:-->
+    <label for="custoFabrica">Custo de Fábrica:</label>
+    <input type="text" id="custoFabrica"><br>
+
+    <label for="porcDistribuidor">% Distribuidor:</label>
+    <input type="text" id="porcDistribuidor"><br>
+
+    <label for="porcImpostos">% Impostos:</label>
+    <input type="text" id="porcImpostos"><br>
+
+    <button onclick="calcularCusto()">Calcular Custo</button>
+
+    <h3 id="valorFinal">Valor Final:</h3>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
